@@ -82,16 +82,3 @@ def create_dataset_fabric(dataset_path):
             labels.append("other")
     
     return dataset, labels
-
-
-'''
-Quickstart:
-
-dataset, labels = create_dataset_dog("dog_emotion_resized")
-print(type(dataset[0]))
-print(dataset[0].shape)
-pca = PCA(n_components=100)
-new = pca.fit_transform(dataset)
-print(new.shape)
-
-'''
